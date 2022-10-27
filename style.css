@@ -1,0 +1,40 @@
+
+  .container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img{
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+  }
+  .circulo{
+    height: 80px;
+    width: 80px;
+    background: grey;
+    border-radius: 100%;
+    position: absolute;
+    opacity: .8;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  #activador{
+    width: 135%;
+    height: 135%;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
