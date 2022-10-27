@@ -1,6 +1,7 @@
 body{
     width: 100%;
     margin: 0;
+    font-family: Montserrat;
 }
 nav{
     height: 100vh;
@@ -19,6 +20,7 @@ nav{
     height: 1px;
     background-color: white;
     margin: auto;
+    position: relative;
 }
 
 
@@ -29,14 +31,15 @@ nav{
     position: relative;
   }
   .img{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     background: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 25px;
+    overflow: hidden;
   }
   .circulo{
     height: 80px;
@@ -63,4 +66,54 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+  }
+
+  .enlaces{
+    position: absolute;
+    font-weight: 400;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    top: -1em;
+  }
+  .enlaces a{
+    text-decoration: none;
+    color: white;
+    transform: scaleY();
+    position: relative;
+    text-align: center;
+    height: 70px;
+    width: 5em;
+  }
+  .enlaces a::before{
+    content: "";
+    display: block;
+    height: 100%;
+  }
+  .enlaces a span{
+    display: block;
+    transform-origin: top;
+    transition: .2s;
+    transform: scaleY(0);
+    margin-top: -40px;
+  }
+  .enlaces a::after{
+    content: "";
+    height: 1em;
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: .4em;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .enlaces a:hover span{
+    transform: scaleY(1);
+  }
+  .img img{
+    display: block;
+    width: 110%;
+    transform: rotate(-10deg);
   }

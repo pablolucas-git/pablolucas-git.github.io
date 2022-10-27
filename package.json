@@ -7,6 +7,7 @@
   "author": "Pablo",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "swup": "^2.0.19"
   }
 }
