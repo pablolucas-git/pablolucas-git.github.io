@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Pablo Lucas Portfolio",
+  "main": "index.html",
+  "repository": "https://github.com/pablolucas-git/pablolucas-git.github.io.git",
+  "author": "Pablo",
+  "license": "MIT"
+}
