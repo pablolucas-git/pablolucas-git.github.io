@@ -33,7 +33,7 @@ function rotar() {
 
   setInterval(function () {
     if (!pausa && firstTime) {
-      angulo += 0.003;
+      angulo += 0.0025;
       for (elemento of circulos) {
         elemento.style.top = calcTop(angulo) + "px";
         elemento.style.left = calcLeft(angulo) + "px";
