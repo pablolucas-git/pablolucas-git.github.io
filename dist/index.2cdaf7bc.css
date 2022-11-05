@@ -1,0 +1,163 @@
+body {
+  width: 100%;
+  background-color: #000;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+nav {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  align-items: center;
+  transition: all 1s;
+  display: flex;
+}
+
+.linea, .container {
+  display: inline-block;
+}
+
+.linea {
+  width: 30vw;
+  height: 1px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+}
+
+.container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.img {
+  width: 130px;
+  height: 130px;
+  background: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.circulo {
+  height: 80px;
+  width: 80px;
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 100%;
+  padding: 0;
+  transition: all .2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(0);
+}
+
+.circulo img {
+  height: 100%;
+}
+
+#activador {
+  width: 135%;
+  height: 135%;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.enlaces {
+  width: 30vw;
+  justify-content: space-around;
+  font-weight: 400;
+  display: flex;
+  position: absolute;
+  top: -1em;
+}
+
+.enlaces a {
+  color: #fff;
+  transform: scaleY();
+  text-align: center;
+  height: 70px;
+  width: 5em;
+  text-decoration: none;
+  position: relative;
+}
+
+.enlaces a:before {
+  content: "";
+  height: 100%;
+  display: block;
+}
+
+.enlaces a span {
+  transform-origin: top;
+  margin-top: -40px;
+  transition: all .2s;
+  display: block;
+  transform: scaleY(0);
+}
+
+.enlaces a:after {
+  content: "";
+  height: 1em;
+  width: 1px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: .4em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.enlaces a:hover span {
+  transform: scaleY(1);
+}
+
+.img img {
+  width: 110%;
+  display: block;
+  transform: rotate(-10deg);
+}
+
+.out-index {
+  height: 210px;
+}
+
+.out-index .img {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.out-index .circulo {
+  width: 50px;
+  height: 50px;
+}
+
+.out-index .container {
+  width: 150px;
+  height: 150px;
+}
+
+.out-index .linea, .out-index .linea .enlaces {
+  width: 40vw;
+}
+
+main {
+  color: #fff;
+}
+
+.transition-fade {
+  transition: all 1s;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

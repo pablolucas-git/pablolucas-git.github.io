@@ -1,0 +1,152 @@
+body{
+    width: 100%;
+    margin: 0;
+    font-family: Montserrat;
+    background-color: black;
+}
+nav{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    transition: 1s;
+}
+
+.linea, .container{
+    display: inline-block;
+}
+
+.linea{
+    width: 30vw;
+    height: 1px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+}
+
+
+
+  .container{
+    height: 300px;
+    width: 300px;
+    position: relative;
+  }
+  .img{
+    width: 130px;
+    height: 130px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .circulo{
+    height: 80px;
+    width: 80px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    color: black;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    padding: 0;
+    cursor: pointer;
+  }
+  .circulo img{
+    height: 100%;
+  }
+  #activador{
+    width: 135%;
+    height: 135%;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .enlaces{
+    position: absolute;
+    font-weight: 400;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    top: -1em;
+  }
+  .enlaces a{
+    text-decoration: none;
+    color: white;
+    transform: scaleY();
+    position: relative;
+    text-align: center;
+    height: 70px;
+    width: 5em;
+  }
+  .enlaces a::before{
+    content: "";
+    display: block;
+    height: 100%;
+  }
+  .enlaces a span{
+    display: block;
+    transform-origin: top;
+    transition: .2s;
+    transform: scaleY(0);
+    margin-top: -40px;
+  }
+  .enlaces a::after{
+    content: "";
+    height: 1em;
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: .4em;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .enlaces a:hover span{
+    transform: scaleY(1);
+  }
+  .img img{
+    display: block;
+    width: 110%;
+    transform: rotate(-10deg);
+  }
+
+  .out-index{
+    height: 210px;
+  }
+
+  .out-index .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  .out-index .circulo{
+    width: 50px;
+    height: 50px;
+  }
+  .out-index .container
+{
+  width: 150px;
+  height: 150px;
+}
+.out-index .linea{
+  width: 40vw;
+}
+.out-index .linea .enlaces{
+  width: 40vw;
+}
+main{
+  color: white;
+}
+.transition-fade {
+  transition: 1s;
+}
